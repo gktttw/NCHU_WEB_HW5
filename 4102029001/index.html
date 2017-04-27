@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>JSP</title>
+<style>
+body {
+    background-color: rgba(52, 138, 185, 0.56);
+}
+div {
+	margin-top:90px; 
+	margin-left:auto; 
+	margin-right:auto; 
+	margin-bottom:auto; 
+    border: 5px  dashed #FFAC55;
+	padding: 5px;
+    width: 30%;
+	text-align:center;
+   }
+</style>
+</head>
+<body>
+<div>
+	<form action="some.jsp" method="POST">
+		姓名:<input type="text" name="usrname"/><br/><br/>
+		性別:<input type="radio" name="g" value="女"/>女
+			<input type="radio" name="g" value="男"/>男<br/><br/>
+		學歷:<SELECT name=edu size=1>
+			<OPTION value = "國小" >國小</OPTION>
+			<OPTION value = "國中" >國中</OPTION>
+			<OPTION value = "高中" >高中</OPTION>
+			<OPTION value = "大學" >大學</OPTION>
+		</SELECT><br/><br/>
+		興趣:<SELECT name=lbxBook size=5 Multiple>
+			<OPTION value = "吃飯" selected>吃飯</OPTION>
+			<OPTION value = "睡覺" selected>睡覺</OPTION>
+			<OPTION value = "打咚咚" >打咚咚</OPTION>
+			<OPTION value = "asdf" >asdf</OPTION>
+			<OPTION value = "zxcv" >zxcv</OPTION>
+		</SELECT><br/><br/>
+		language:
+		<input type="checkbox" name="langtype" value="JSP" selected />JSP　
+		<input type="checkbox" name="langtype" value="PHP"/>PHP　
+		<input type="checkbox" name="langtype" value="PERL"/>PERL<br/><br/>
+		自傳:<br/>
+		<textarea rows="4" cols="50" name="textarea"></TEXTAREA><br/><br/>
+	<input type="submit" value="提交" />
+	</form>
+</div>
+</body>
+</html>
