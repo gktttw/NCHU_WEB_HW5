@@ -27,7 +27,11 @@ div {
 request.setCharacterEncoding("utf8");
 //String Name = new String(request.getParameter("usrname").getBytes("ISO-8859-1"), "UTF-8");
 out.print("名字:  "+ request.getParameter("usrname") +"<br/>");
-out.print("性別:  "+request.getParameter("g")+"<br/>");
+String sex = request.getParameter("g");
+if (sex==null){
+	sex = "on";
+}
+out.print("性別:  "+sex+"<br/>");
 out.print("學歷:  "+request.getParameter("edu")+"<br/>");
 
 out.print("興趣:  ");
