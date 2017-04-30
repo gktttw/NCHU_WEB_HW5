@@ -29,7 +29,7 @@ request.setCharacterEncoding("utf8");
 out.print("名字:  "+ request.getParameter("usrname") +"<br/>");
 String sex = request.getParameter("g");
 if (sex==null){
-	sex = "on";
+	sex = "on(你沒選性別)";
 }
 out.print("性別:  "+sex+"<br/>");
 out.print("學歷:  "+request.getParameter("edu")+"<br/>");
